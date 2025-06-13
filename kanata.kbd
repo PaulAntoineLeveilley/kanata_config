@@ -53,20 +53,20 @@
 )
 
 
-(deflayer numbers
+(deflayer scroll 
  ⎋         f1   f2   f3   f4   f5   f6   f7   f8   f9  f10   f11  f12
   @         1    2    3    4    5    6    7    8    9    0    par   -    ⌫
   ↹         1    2    3    4    5    6    7    8    9    0     ^    kp*
-  ⇪        @q    @s    @d    @f    g    h    @j    @k    @l    @m     ù    `    ↩
+  ⇪        @q    @s    @d    @f    g    h    j    k    l    @m     ù    `    ↩
  ‹⇧   <     w    x    c    v    b    n    ,    .    /    =          ▲    ⇧›
   fn       ‹⌃   ‹⌥   ‹⌘              ␣              ⌘›   ⌥›    ◀    ▼    ▶
 )
 
-(deflayer scroll
+(deflayer numbers
   ⎋         f1   f2   f3   f4   f5   f6   f7   f8   f9  f10   f11  f12
   @         1    2    3    4    5    6    7    8    9    0    par   -    ⌫
   ↹         f1   f2   f3   f4   f5   f6   f7   f8   f9  f10     ^    kp*
-  ⇪         @q    s    d    f    g    h    j    k    l    m     ù    `    ↩
+  ⇪         @1    @2    @3    @4    @5    @6    @7    @8    @9    @0     ù    `    ↩
  ‹⇧   <     w    x    c    v    b    n    ,    .    /    =          ▲    ⇧›
   fn       ‹⌃   ‹⌥   ‹⌘              ␣              ⌘›   ⌥›    ◀    ▼    ▶
 )
@@ -80,12 +80,24 @@
     k (tap-hold $tap-time $hold-time k ralt)
     l (tap-hold $tap-time $hold-time l rctl)
     m (tap-hold $tap-time $hold-time m lsft)
+    
+    1 (tap-hold $tap-time $hold-time (multi lsft 1) lsft)
+    2 (tap-hold $tap-time $hold-time (multi lsft 2)  lctl)
+    3 (tap-hold $tap-time $hold-time (multi lsft 3)  lalt)
+    4 (tap-hold $tap-time $hold-time (multi lsft 4)  lmet)
+    5 (multi lsft 5)
+    6 (multi lsft 6)
+    7 (tap-hold $tap-time $hold-time (multi lsft 7)  rmet)
+    8 (tap-hold $tap-time $hold-time (multi lsft 8)  ralt)
+    9 (tap-hold $tap-time $hold-time (multi lsft 9)  rctl)
+    0 (tap-hold $tap-time $hold-time (multi lsft 0)  lsft)
 
-    g (tap-hold $tap-time $hold-time g (layer-toggle scroll))
-    h (tap-hold $tap-time $hold-time h (layer-toggle scroll))
+
+    g (tap-hold $tap-time $hold-time g (layer-toggle numbers))
+    h (tap-hold $tap-time $hold-time h (layer-toggle numbers))
     ␣ (tap-hold $tap-time $hold-time ␣ (layer-toggle fleches))
-    num1 (tap-hold $tap-time $hold-time v (layer-toggle numbers))
-    num2 (tap-hold $tap-time $hold-time , (layer-toggle numbers))
+    num1 (tap-hold $tap-time $hold-time v (layer-toggle scroll))
+    num2 (tap-hold $tap-time $hold-time , (layer-toggle scroll))
 
     o (multi lsft ↹)
 )
