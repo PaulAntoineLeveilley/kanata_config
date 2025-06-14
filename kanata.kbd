@@ -48,7 +48,7 @@
   @         1    2    3    4     5   6    7    8    9    0     par   -    ⌫
   a         ↹    <    ⎋    kp*    t    y    5    par   @o    ⌫     ^    kp*
   ⎋        @q   @s   @d   @f    g    ◀    ▼    ▲    ▶    ↩     ù    `    ↩
- ‹⇧   <     w    x    c   @num1    -    @num2   ,   .    /    =          ▲    ⇧›
+ ‹⇧   <     w    x    c   @scroll1    -    @scroll2   ,   .    /    =          ▲    ⇧›
   fn       ‹⌃   ‹⌥   ‹⌘              ␣              ⌘›   ⌥›    ◀    ▼    ▶
 )
 
@@ -96,8 +96,8 @@
     g (tap-hold $tap-time $hold-time g (layer-toggle numbers))
     h (tap-hold $tap-time $hold-time h (layer-toggle numbers))
     ␣ (tap-hold $tap-time $hold-time ␣ (layer-toggle fleches))
-    num1 (tap-hold $tap-time $hold-time v (layer-toggle scroll))
-    num2 (tap-hold $tap-time $hold-time , (layer-toggle scroll))
+    scroll1 (tap-hold $tap-time $hold-time v (layer-toggle scroll))
+    scroll2 (tap-hold $tap-time $hold-time , (layer-toggle scroll))
 
     o (multi lsft ↹)
 )
