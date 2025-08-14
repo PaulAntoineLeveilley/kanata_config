@@ -1,1 +1,6 @@
-sudo '/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/Applications/Karabiner-VirtualHIDDevice-Daemon.app/Contents/MacOS/Karabiner-VirtualHIDDevice-Daemon'
+# launch the daemon 
+sudo nohup '/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/Applications/Karabiner-VirtualHIDDevice-Daemon.app/Contents/MacOS/Karabiner-VirtualHIDDevice-Daemon' &
+# launch kanata (don't save output)
+sudo nohup kanata > /dev/null &
+# alors truc chelou, apparement, il faut lancer ces deux commandes depuis
+# iterm (en tout cas ça fonctione pas si on les lance dans wezterm)
