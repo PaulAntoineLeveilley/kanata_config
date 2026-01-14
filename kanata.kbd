@@ -65,9 +65,9 @@
 (deflayer numbers
   ⎋         f1   f2   f3   f4   f5   f6   f7   f8   f9  f10   f11  f12
   @         1    2    3    4    5    6    7    8    9    0    par   -    ⌫
-  ↹         f1   f2   f3   f4   f5   f6   f7   f8   f9  f10     ^    kp*
-  ⇪         @1    @2    @3    @4    @5    @6    @7    @8    @9    @0     ù    `    ↩
- ‹⇧   <     w    x    c    v    b    n    ,    .    /    =          ▲    ⇧›
+  ↹         f1   f2   f3   f4   f5   @1   @2   @3  @4  @5     ^    kp*
+  ⇪         @f6  @f7  @f8  @f9  f10    @6    @7    @8    @9    @0     ù    `    ↩
+ ‹⇧   <     f11    f12    c    v    b    n    ,    .    /    =          ▲    ⇧›
   fn       ‹⌃   ‹⌥   ‹⌘              ␣              ⌘›   ⌥›    ◀    ▼    ▶
 )
 
@@ -81,17 +81,21 @@
     l (tap-hold $tap-time $hold-time l rctl)
     m (tap-hold $tap-time $hold-time m lsft)
     
-    1 (tap-hold $tap-time $hold-time (multi lsft 1) lsft)
-    2 (tap-hold $tap-time $hold-time (multi lsft 2)  lctl)
-    3 (tap-hold $tap-time $hold-time (multi lsft 3)  lalt)
-    4 (tap-hold $tap-time $hold-time (multi lsft 4)  lmet)
+    1 (multi lsft 1) 
+    2 (multi lsft 2)  
+    3 (multi lsft 3)  
+    4 (multi lsft 4)  
     5 (multi lsft 5)
     6 (multi lsft 6)
     7 (tap-hold $tap-time $hold-time (multi lsft 7)  rmet)
     8 (tap-hold $tap-time $hold-time (multi lsft 8)  ralt)
     9 (tap-hold $tap-time $hold-time (multi lsft 9)  rctl)
-    0 (tap-hold $tap-time $hold-time (multi lsft 0)  lsft)
+    0 (tap-hold $tap-time $hold-time (multi lsft 0)  rsft)
 
+    f6 (tap-hold $tap-time $hold-time f6 lsft)
+    f7 (tap-hold $tap-time $hold-time f7 lctl)
+    f8 (tap-hold $tap-time $hold-time f8 lalt)
+    f9 (tap-hold $tap-time $hold-time f9 lmet)
 
     g (tap-hold $tap-time $hold-time g (layer-toggle numbers))
     h (tap-hold $tap-time $hold-time h (layer-toggle numbers))
