@@ -46,9 +46,9 @@
 (deflayer fleches
   ⇪         🔅   🔆   f3   f4   f5   f6   f7   f8   f9    🔇   🔉   🔊
   @         1    2    3    4     5   6    7    8    9    0     par   -    ⌫
-  a         ↹    <    ⎋    kp*    t    y    5    par   @o    ⌫     ^    kp*
+  a         ↹    <    ⎋    kp*    🔉   🔊    5    par   @o    ⌫     ^    kp*
   ⎋        @q   @s   @d   @f    g    ◀    ▼    ▲    ▶    ↩     ù    `    ↩
- ‹⇧   <     w    x    c   @scroll1    -    @scroll2   ,   .    /    =          ▲    ⇧›
+ ‹⇧   <    🔅   🔆    c   @scroll1    -    @scroll2   ,   .    /    =          ▲    ⇧›
   fn       ‹⌃   ‹⌥   ‹⌘              ␣              ⌘›   ⌥›    ◀    ▼    ▶
 )
 
